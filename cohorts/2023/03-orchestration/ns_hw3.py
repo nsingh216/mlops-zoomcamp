@@ -149,16 +149,18 @@ def main_flow(
 
 
 @flow
+
+# TODO: read from cred file instead
 def example_email_send_message_flow():
     email_server_credentials = EmailServerCredentials(
-        username="",
-        password="",
+        username="REDACTED",
+        password="REDACTED",
     )
     subject = email_send_message(
         email_server_credentials=email_server_credentials,
         subject="Example Flow Notification using Gmail",
         msg="This proves email_send_message works!",
-        email_to="niveditasingh216@gmail.com@gmail.com",
+        email_to="REDACTED",
     )
     return subject
 
